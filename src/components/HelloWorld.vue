@@ -10,6 +10,15 @@
       <li><a href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue CLI 문서</a></li>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
     </ul>
   </div>
 </template>
