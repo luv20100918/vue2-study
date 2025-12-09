@@ -8,6 +8,7 @@
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Vue.jsㅇㅇㅇㅇ 공식 문서</a></li>
       <li><a href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue CLI 메롱메롱</a></li>
+      <li><a href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue 1111해ㄱLI심111 핵심문서</a></li>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Vuex</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">요기도수정</a></li>
