@@ -10,6 +10,12 @@
 <script>
 export default {
   name: 'Sample',
+  props: {
+    showKey: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return {
       form: {
@@ -53,6 +59,15 @@ export default {
   margin: 0 auto;
   padding: 20px;
   text-align: left;
+}
+
+.props-display {
+  background: #e3f2fd;
+  border: 1px solid #2196f3;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  color: #1565c0;
 }
 
 .lesson-header {

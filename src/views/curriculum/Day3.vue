@@ -157,7 +157,8 @@ export default {
       isVisible: true,
       isLoggedIn: false,
       username: '홍길동',
-      isTitVisible:false,
+      isTitVisible: false,
+      a: '안녕하세요'
     }
   },
   methods: {
