@@ -86,16 +86,19 @@
           <button @click="isVisible = !isVisible">
             {{ isVisible ? '숨기기' : '보이기' }}
           </button>
+          <!-- <button :class="['btn-type', { 'btn-dep-fill': isVisible }]" @click="isTitVisible = false">IOS</button>
+          <button :class="['btn-type', { 'btn-dep-fill': !isVisible }]" @click="isTitVisible = true">AOS</button> -->
           <button :class="['btn-type', { 'btn-dep-fill': isVisible }]" @click="isTitVisible = false">IOS</button>
           <button :class="['btn-type', { 'btn-dep-fill': !isVisible }]" @click="isTitVisible = true">AOS</button>
           <div v-show="isVisible" class="toggle-box">
             v-show로 토글되는 박스입니다!
           </div>
-          <Sample>asd</Sample>
+          <!-- <Sample :isTxtComm="isTitVisible" /> -->
+          <Sample :isTxtComm="isTitVisible"/>
 
-          <div v-show="isTitVisible" class="toggle-box">
+          <!-- <div v-show="isTitVisible" class="toggle-box">
             isTitVisible
-          </div>
+          </div> -->
 
           <h4 style="margin-top: 30px;">로그인 상태 예제</h4>
           <div v-if="isLoggedIn">
