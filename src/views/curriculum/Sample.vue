@@ -152,7 +152,6 @@
     <div class="lesson-nav">
       <router-link to="/curriculum/day5" class="prev-btn">← Day 5: 이벤트 핸들링</router-link>
       <router-link to="/curriculum/day7" class="next-btn">Day 7: 1주차 복습 →</router-link>
-      <Sample>ggg</Sample>
     </div>
   </div>
 </template>
