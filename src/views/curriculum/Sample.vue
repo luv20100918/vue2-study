@@ -10,12 +10,6 @@
 <script>
 export default {
   name: 'Sample',
-  props: {
-    showKey: {
-      type: String,
-      default: ''
-    }
-  },
   data() {
     return {
       form: {
@@ -236,6 +230,13 @@ h3 {
 .next-btn {
   background: #42b983;
   color: white;
+}
+
+.txt_comm {
+  color: red;
+  font-weight: bold;
+  background: #ffeb3b;
+  padding: 5px 10px;
 }
 
 code {
