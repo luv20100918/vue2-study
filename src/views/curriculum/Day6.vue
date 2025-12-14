@@ -23,13 +23,13 @@
         <h3>1. v-model 기본</h3>
         <p>v-model은 폼 입력과 데이터를 양방향으로 바인딩합니다.</p>
         <div class="code-block">
-          <pre><code>&lt;input v-model="message"&gt;
+          <pre><code class="language-javascript">&lt;input v-model="message"&gt;
 &lt;p&gt;입력값: {{ message }}&lt;/p&gt;</code></pre>
         </div>
 
         <h3>2. 다양한 폼 요소</h3>
         <div class="code-block">
-          <pre><code>&lt;!-- 텍스트 --&gt;
+          <pre><code class="language-javascript">&lt;!-- 텍스트 --&gt;
 &lt;input type="text" v-model="text"&gt;
 
 &lt;!-- 텍스트영역 --&gt;
@@ -55,7 +55,7 @@
 
         <h3>3. v-model 수식어</h3>
         <div class="code-block">
-          <pre><code>&lt;!-- 입력 후 포커스 아웃 시 동기화 --&gt;
+          <pre><code class="language-javascript">&lt;!-- 입력 후 포커스 아웃 시 동기화 --&gt;
 &lt;input v-model.lazy="msg"&gt;
 
 &lt;!-- 자동 숫자 변환 --&gt;
@@ -165,8 +165,13 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day6',
+  mounted() {
+    Prism.highlightAll()
+  },
   data() {
     return {
       form: {
@@ -243,18 +248,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -366,10 +372,10 @@ h3 {
   color: white;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 </style>

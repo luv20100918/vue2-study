@@ -23,7 +23,7 @@
 
         <h3>1. 배열 렌더링</h3>
         <div class="code-block">
-          <pre><code>&lt;ul&gt;
+          <pre><code class="language-javascript">&lt;ul&gt;
   &lt;li v-for="item in items" :key="item.id"&gt;
     {{ item.name }}
   &lt;/li&gt;
@@ -37,7 +37,7 @@
 
         <h3>2. 객체 렌더링</h3>
         <div class="code-block">
-          <pre><code>&lt;div v-for="(value, key) in object" :key="key"&gt;
+          <pre><code class="language-javascript">&lt;div v-for="(value, key) in object" :key="key"&gt;
   {{ key }}: {{ value }}
 &lt;/div&gt;
 
@@ -50,7 +50,7 @@
         <h3>3. key 속성</h3>
         <p><code>:key</code>는 Vue가 각 노드를 추적하고 효율적으로 업데이트하기 위해 필수입니다.</p>
         <div class="code-block">
-          <pre><code>&lt;!-- ❌ 권장하지 않음 --&gt;
+          <pre><code class="language-javascript">&lt;!-- ❌ 권장하지 않음 --&gt;
 &lt;li v-for="item in items"&gt;{{ item }}&lt;/li&gt;
 
 &lt;!-- ✅ 권장 --&gt;
@@ -123,8 +123,13 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day4',
+  mounted() {
+    Prism.highlightAll()
+  },
   data() {
     return {
       newTodo: '',
@@ -216,18 +221,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -358,10 +364,10 @@ h3 {
   color: white;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 </style>

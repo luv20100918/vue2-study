@@ -26,7 +26,7 @@
         </p>
 
         <div class="code-block">
-          <pre><code>// Vue 인스턴스 생성
+          <pre><code class="language-javascript">// Vue 인스턴스 생성
 new Vue({
   el: '#app',        // 마운트할 요소
   data: {            // 반응형 데이터
@@ -60,7 +60,7 @@ new Vue({
         </div>
 
         <div class="code-block">
-          <pre><code>&lt;template&gt;
+          <pre><code class="language-javascript">&lt;template&gt;
   &lt;div&gt;
     &lt;p&gt;카운트: {{ count }}&lt;/p&gt;
     &lt;button @click="increment"&gt;+1 증가&lt;/button&gt;
@@ -110,12 +110,17 @@ export default {
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day1',
   data() {
     return {
       count: 0
     }
+  },
+  mounted() {
+    Prism.highlightAll()
   },
   methods: {
     increment() {
@@ -184,18 +189,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -253,10 +259,10 @@ h3 {
   background: #3aa876;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 </style>

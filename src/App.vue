@@ -16,13 +16,24 @@ export default {
 </script>
 
 <style>
+* {
+  color-scheme: light;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #ffffff;
   margin-top: 60px;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
 }
 
 nav {

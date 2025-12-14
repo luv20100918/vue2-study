@@ -169,8 +169,13 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day7',
+  mounted() {
+    Prism.highlightAll()
+  },
   data() {
     return {
       products: [
