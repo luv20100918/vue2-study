@@ -86,8 +86,15 @@
           <button @click="isVisible = !isVisible">
             {{ isVisible ? '숨기기' : '보이기' }}
           </button>
+          <button :class="['btn-type', { 'btn-dep-fill': isVisible }]" @click="isTitVisible = false">IOS</button>
+          <button :class="['btn-type', { 'btn-dep-fill': !isVisible }]" @click="isTitVisible = true">AOS</button>
           <div v-show="isVisible" class="toggle-box">
             v-show로 토글되는 박스입니다!
+          </div>
+          <Sample>asd</Sample>
+
+          <div v-show="isTitVisible" class="toggle-box">
+            isTitVisible
           </div>
 
           <h4 style="margin-top: 30px;">로그인 상태 예제</h4>
@@ -129,14 +136,20 @@
 </template>
 
 <script>
+import Sample from './Sample.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'Day3',
+  components: {
+    Sample
+  },
   data() {
     return {
       score: 85,
       isVisible: true,
       isLoggedIn: false,
-      username: '홍길동'
+      username: '홍길동',
+      isTitVisible:false,
     }
   },
   methods: {
@@ -314,4 +327,6 @@ code {
   border-radius: 3px;
   color: #e83e8c;
 }
+.demo-box button.btn-type{background: #ffffff; border: 1px solid black; color: black;}
+.demo-box button.btn-type.btn-dep-fill{background: gray; border: 1px solid black;}
 </style>

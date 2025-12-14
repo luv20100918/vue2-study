@@ -27,17 +27,17 @@
 
         <div class="code-block">
           <pre><code>// Vue 인스턴스 생성
-new Vue({
-  el: '#app',        // 마운트할 요소
-  data: {            // 반응형 데이터
-    message: 'Hello Vue!'
-  },
-  methods: {         // 메서드 정의
-    greet() {
-      alert(this.message)
-    }
-  }
-})</code></pre>
+            new Vue({
+              el: '#app',        // 마운트할 요소
+              data: {            // 반응형 데이터
+                message: 'Hello Vue!'
+              },
+              methods: {         // 메서드 정의
+                greet() {
+                  alert(this.message)
+                }
+              }
+            })</code></pre>
         </div>
 
         <h3>주요 옵션</h3>
