@@ -23,7 +23,7 @@
 
         <h3>1. 기본 이벤트 리스닝</h3>
         <div class="code-block">
-          <pre><code>&lt;!-- 전체 문법 --&gt;
+          <pre><code class="language-javascript">&lt;!-- 전체 문법 --&gt;
 &lt;button v-on:click="handleClick"&gt;클릭&lt;/button&gt;
 
 &lt;!-- 축약 문법 (권장) --&gt;
@@ -38,7 +38,7 @@
 
         <h3>2. 이벤트 수식어</h3>
         <div class="code-block">
-          <pre><code>&lt;!-- 이벤트 전파 중단 --&gt;
+          <pre><code class="language-javascript">&lt;!-- 이벤트 전파 중단 --&gt;
 &lt;a @click.stop="handleClick"&gt;링크&lt;/a&gt;
 
 &lt;!-- 기본 동작 방지 --&gt;
@@ -56,7 +56,7 @@
 
         <h3>3. 키 수식어</h3>
         <div class="code-block">
-          <pre><code>&lt;!-- Enter 키 --&gt;
+          <pre><code class="language-javascript">&lt;!-- Enter 키 --&gt;
 &lt;input @keyup.enter="submit"&gt;
 
 &lt;!-- ESC 키 --&gt;
@@ -142,8 +142,13 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day5',
+  mounted() {
+    Prism.highlightAll()
+  },
   data() {
     return {
       count: 0,
@@ -238,18 +243,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -331,10 +337,10 @@ h3 {
   color: white;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 </style>

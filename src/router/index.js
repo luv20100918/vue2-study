@@ -10,6 +10,13 @@ import Day4 from '@/views/curriculum/Day4.vue'
 import Day5 from '@/views/curriculum/Day5.vue'
 import Day6 from '@/views/curriculum/Day6.vue'
 import Day7 from '@/views/curriculum/Day7.vue'
+import Day8 from '@/views/curriculum/Day8.vue'
+import Day9 from '@/views/curriculum/Day9.vue'
+import Day10 from '@/views/curriculum/Day10.vue'
+import Day11 from '@/views/curriculum/Day11.vue'
+import Day12 from '@/views/curriculum/Day12.vue'
+import Day13 from '@/views/curriculum/Day13.vue'
+import Day14 from '@/views/curriculum/Day14.vue'
 
 Vue.use(VueRouter)
 
@@ -63,6 +70,41 @@ const routes = [
     path: '/curriculum/day7',
     name: 'Day7',
     component: Day7
+  },
+  {
+    path: '/curriculum/day8',
+    name: 'Day8',
+    component: Day8
+  },
+  {
+    path: '/curriculum/day9',
+    name: 'Day9',
+    component: Day9
+  },
+  {
+    path: '/curriculum/day10',
+    name: 'Day10',
+    component: Day10
+  },
+  {
+    path: '/curriculum/day11',
+    name: 'Day11',
+    component: Day11
+  },
+  {
+    path: '/curriculum/day12',
+    name: 'Day12',
+    component: Day12
+  },
+  {
+    path: '/curriculum/day13',
+    name: 'Day13',
+    component: Day13
+  },
+  {
+    path: '/curriculum/day14',
+    name: 'Day14',
+    component: Day14
   }
 ]
 

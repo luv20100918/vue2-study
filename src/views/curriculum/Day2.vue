@@ -24,7 +24,7 @@
         <h3>1. 머스태시 문법 {{ }}</h3>
         <p>데이터를 텍스트로 출력하는 가장 기본적인 방법입니다.</p>
         <div class="code-block">
-          <pre><code>&lt;p&gt;메시지: {{ message }}&lt;/p&gt;
+          <pre><code class="language-javascript">&lt;p&gt;메시지: {{ message }}&lt;/p&gt;
 &lt;p&gt;계산: {{ 1 + 1 }}&lt;/p&gt;
 &lt;p&gt;메서드 호출: {{ message.toUpperCase() }}&lt;/p&gt;</code></pre>
         </div>
@@ -32,7 +32,7 @@
         <h3>2. v-bind (속성 바인딩)</h3>
         <p>HTML 속성에 동적으로 값을 바인딩합니다.</p>
         <div class="code-block">
-          <pre><code>&lt;!-- 전체 문법 --&gt;
+          <pre><code class="language-javascript">&lt;!-- 전체 문법 --&gt;
 &lt;img v-bind:src="imageUrl"&gt;
 
 &lt;!-- 축약 문법 (권장) --&gt;
@@ -44,7 +44,7 @@
         <h3>3. v-html (HTML 렌더링)</h3>
         <p>HTML 문자열을 실제 HTML로 렌더링합니다. (XSS 주의!)</p>
         <div class="code-block">
-          <pre><code>&lt;div v-html="htmlContent"&gt;&lt;/div&gt;</code></pre>
+          <pre><code class="language-javascript">&lt;div v-html="htmlContent"&gt;&lt;/div&gt;</code></pre>
         </div>
       </section>
 
@@ -100,8 +100,13 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 export default {
   name: 'Day2',
+  mounted() {
+    Prism.highlightAll()
+  },
   data() {
     return {
       message: 'Hello Vue!',
@@ -172,18 +177,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -243,10 +249,10 @@ h3 {
   color: white;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 </style>

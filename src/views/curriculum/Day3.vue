@@ -23,7 +23,7 @@
         <h3>1. v-if / v-else-if / v-else</h3>
         <p>조건에 따라 요소를 DOM에 추가하거나 제거합니다.</p>
         <div class="code-block">
-          <pre><code>&lt;div v-if="score >= 90"&gt;A등급&lt;/div&gt;
+          <pre><code class="language-javascript">&lt;div v-if="score >= 90"&gt;A등급&lt;/div&gt;
 &lt;div v-else-if="score >= 80"&gt;B등급&lt;/div&gt;
 &lt;div v-else-if="score >= 70"&gt;C등급&lt;/div&gt;
 &lt;div v-else&gt;F등급&lt;/div&gt;</code></pre>
@@ -32,7 +32,7 @@
         <h3>2. v-show</h3>
         <p>CSS display 속성으로 요소를 숨기거나 보여줍니다.</p>
         <div class="code-block">
-          <pre><code>&lt;div v-show="isVisible"&gt;보이거나 숨겨집니다&lt;/div&gt;</code></pre>
+          <pre><code class="language-javascript">&lt;div v-show="isVisible"&gt;보이거나 숨겨집니다&lt;/div&gt;</code></pre>
         </div>
 
         <h3>3. v-if vs v-show 비교</h3>
@@ -136,10 +136,15 @@
 </template>
 
 <script>
+import Prism from 'prismjs'
+
 import Sample from './Sample.vue'
 // import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'Day3',
+  mounted() {
+    Prism.highlightAll()
+  },
   components: {
     Sample
   },
@@ -216,18 +221,19 @@ h3 {
 }
 
 .code-block {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 15px;
-  overflow-x: auto;
   margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.code-block code {
-  color: #f8f8f2;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+.code-block pre {
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.code-block pre code {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
 .demo-box {
@@ -321,11 +327,11 @@ h3 {
   color: white;
 }
 
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #e83e8c;
+p code, li code {
+  background: #f5f5f5 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  color: #e83e8c !important;
 }
 .demo-box button.btn-type{background: #ffffff; border: 1px solid black; color: black;}
 .demo-box button.btn-type.btn-dep-fill{background: gray; border: 1px solid black;}
