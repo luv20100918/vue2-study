@@ -12,7 +12,7 @@
         <h2>📌 학습 목표</h2>
         <ul>
           <li>머xcvxvxcvxcvcxvxvcvcv</li>
-          <li>v-bind로 속성 바인딩</li>
+          <li>cxzvczvvcvccccccc</li>
           <li>v-html로 HTML 렌더링</li>
           <li>JavaScript 표현식 사용법</li>
         </ul>
