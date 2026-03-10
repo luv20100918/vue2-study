@@ -4,7 +4,7 @@
       <router-link to="/curriculum" class="back-link">← 커리큘럼으로 돌아가기</router-link>
       <span class="day-badge">Day 2</span>
       <h1>템플릿 문법</h1>
-      <p class="duration">⏱️ 예상 소요 시간: 30분</p>
+      <p class="duration">⏱️ ㅇㅇㅇㅇㅇㅇㅇㅇ</p>
     </div>
 
     <div class="lesson-content">
