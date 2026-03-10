@@ -1,7 +1,7 @@
 <template>
   <div class="lesson">
     <div class="lesson-nav" style="background: yellow;">
-      <div :class="{'txt_comm':isTxtComm}">제목제목</div>
+      <div :class="{'txt_comm':isTxtComm}" v-show="isTxtComm">제목제목</div>
       <div class="con-txt">내용내용내용내용</div>
     </div>
   </div>
