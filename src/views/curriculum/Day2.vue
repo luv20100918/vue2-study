@@ -14,7 +14,7 @@
           <li>머xcvxvxcvxcvcxvxvcvcv</li>
           <li>cxzvczvvcvccccccc</li>
           <li>v-html로 HTML 렌더링</li>
-          <li>JavaScript 표현식 사용법</li>
+          <li>또수정</li>
         </ul>
       </section>
 
