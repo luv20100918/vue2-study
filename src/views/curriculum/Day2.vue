@@ -13,7 +13,7 @@
         <ul>
           <li>머xcvxvxcvxcvcxvxvcvcv</li>
           <li>cxzvczvvcvccccccc</li>
-          <li>v-html로 HTML 렌더링</li>
+          <li>진짜?</li>
           <li>또수정</li>
         </ul>
       </section>
