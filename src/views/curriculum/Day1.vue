@@ -10,11 +10,11 @@
     <div class="lesson-content">
       <section>
         <h2>📌 학습 목표</h2>
-        <div>
-          <div>Vue 인스턴스가 무엇인지 이해한다</div>
-          <div>Vue 앱을 생성하고 마운트할 수 있다</div>
-          <div>data와 methods의 기본 사용법을 익힌다</div>
-        </div>
+        <ul>
+          <li>뭐가문제냐</li>
+          <li>컨플릭없어라</li>
+          <li>배고파</li>
+        </ul>
       </section>
 
       <section>
