@@ -11,7 +11,7 @@
       <section>
         <h2>📌 학습 목표</h2>
         <ul>
-          <li>뭐가문제냐</li>
+          <li>sdddd</li>
           <li>컨플릭없어라</li>
           <li>배고파</li>
         </ul>
