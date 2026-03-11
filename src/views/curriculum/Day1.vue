@@ -3,7 +3,7 @@
     <div class="lesson-header">
       <router-link to="/curriculum" class="back-link">← 커리큘럼으로 돌아가기</router-link>
       <span class="day-badge">Day 1</span>
-      <h1>Ehdf;;fd;ff</h1>
+      <h1>수정할게요.</h1>
       <p class="duration">⏱️ 예상 소요 시간: 30분</p>
     </div>
 
