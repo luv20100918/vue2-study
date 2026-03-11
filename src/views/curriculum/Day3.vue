@@ -9,7 +9,7 @@
 
     <div class="lesson-content">
       <section>
-        <h2>📌 학습 목표</h2>
+        <h2>📌 학습 ㅇㄹㄴㄹㄴㄹ</h2>
         <ul>
           <li>v-if, v-else-if, v-else 사용법</li>
           <li>v-show와 v-if의 차이점</li>
